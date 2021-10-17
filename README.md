@@ -21,3 +21,54 @@ The purposes of the project are:
 2.	Use the SMOTEENN Algorithm to Predict Credit Risk
 3.	Use Ensemble Classifiers to Predict Credit Risk
 4.	Provide written report on the Credit Risk Analysis
+
+## Results
+
+### RandomOverSampler
+
+![01](https://user-images.githubusercontent.com/84211948/137615316-907eaadd-6a58-4537-ac71-870190d2acb1.png)
+
+- The balanced accuracy score is 65%.
+- For high-risk, the precision score is 1%, recall score is 63%. Only 1% of predicted high-risk are true high-risk and 63% high-risk cases are correctly identified by this model with a F1 score of 2%. 
+- For low-risk, the precision score is 100%, recall score is 67%. Due to the small population of high-risk and large population of low-risk, almost 100% predicted low-risk are true low-risk, and 67% low-risk are correctly identified with a F1 score of 80%.
+
+
+### SMOTE 
+
+![02](https://user-images.githubusercontent.com/84211948/137615321-03af0675-c3d4-4a97-831f-c2dad0583fd2.png)
+
+- The balanced accuracy score is 65%.
+- For high-risk, the precision score is 1%, recall score is 64%. Only 1% of predicted high-risk are true high-risk and 64% high-risk cases are correctly identified by this model with a F1 score of 2%. 
+- For low-risk, the precision score is 100%, recall score is 66%. Due to the small population of high-risk and large population of low-risk, almost 100% predicted low-risk are true low-risk, and 66% low-risk are correctly identified with a F1 score of 79%.
+
+### ClusterCentroids
+
+![3](https://user-images.githubusercontent.com/84211948/137615327-da3f350c-4c6f-4433-ae1b-754c6ea2bf92.png)
+
+- The balanced accuracy score is 53%.
+- For high-risk, the precision score is 1%, recall score is 61%. Only 1% of predicted high-risk are true high-risk and 61% high-risk cases are correctly identified by this model with a F1 score of 1%. 
+- For low-risk, the precision score is 100%, recall score is 45%. Due to the small population of high-risk and large population of low-risk, almost 100% predicted low-risk are true low-risk, and 45% low-risk are correctly identified with a F1 score of 62%.
+
+### SMITEENN
+
+![4](https://user-images.githubusercontent.com/84211948/137615333-98a23cd8-e840-4b0c-b2e1-ba33c0e65561.png)
+
+- The balanced accuracy score is 64%.
+- For high-risk, the precision score is 1%, recall score is 70%. Only 1% of predicted high-risk are true high-risk and 70% high-risk cases are correctly identified by this model with a F1 score of 2%. 
+- For low-risk, the precision score is 100%, recall score is 57%. Due to the small population of high-risk and large population of low-risk, almost 100% predicted low-risk are true low-risk, and 57% low-risk are correctly identified with a F1 score of 73%.
+
+### BalancedRandomForestClassifier
+
+![5](https://user-images.githubusercontent.com/84211948/137615341-f408d043-1f15-43f0-995b-9e537410085c.png)
+
+- The balanced accuracy score is 79%.
+- For high-risk, the precision score is 4%, recall score is 67%. 4% of predicted high-risk are true high-risk and 67% high-risk cases are correctly identified by this model with a F1 score of 7%. 
+- For low-risk, the precision score is 100%, recall score is 91%. Due to the small population of high-risk and large population of low-risk, almost 100% predicted low-risk are true low-risk, and 91% low-risk are correctly identified with a F1 score of 95%.
+
+### EasyEnsembleClassifier
+
+![6](https://user-images.githubusercontent.com/84211948/137615350-b01390a7-5183-4db5-ba66-95a7a082eba0.png)
+
+- The balanced accuracy score is 93%.
+- For high-risk, the precision score is 7%, recall score is 91%. 7% of predicted high-risk are true high-risk and 91% high-risk cases are correctly identified by this model with a F1 score of 14%. 
+- For low-risk, the precision score is 100%, recall score is 94%. Due to the small population of high-risk and large population of low-risk, almost 100% predicted low-risk are true low-risk, and 94% low-risk are correctly identified with a F1 score of 97%.
