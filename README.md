@@ -22,7 +22,7 @@ The purposes of the project are:
 3.	Use Ensemble Classifiers to Predict Credit Risk
 4.	Provide written report on the Credit Risk Analysis
 
-## Results
+## II. Results
 
 ### RandomOverSampler
 
@@ -72,3 +72,16 @@ The purposes of the project are:
 - The balanced accuracy score is 93%.
 - For high-risk, the precision score is 7%, recall score is 91%. 7% of predicted high-risk are true high-risk and 91% high-risk cases are correctly identified by this model with a F1 score of 14%. 
 - For low-risk, the precision score is 100%, recall score is 94%. Due to the small population of high-risk and large population of low-risk, almost 100% predicted low-risk are true low-risk, and 94% low-risk are correctly identified with a F1 score of 97%.
+
+## III. Summary
+
+In summary, `ClusterCentroids` has the lowest accuracy score, precision score, recall score and the F1 score. On the other hand, `EasyEnsembleClassifier` has the highest accuracy score, precision score, recall score and F1 score. 
+
+### Recommendation
+
+Due to the small population of high-risk, the precision scores of high-risk are extremely low for each model, and low-risk precision scores are almost 100% for all of the models. For credit risk analysis, it very important to catch the high-risk profiles. In this case, the recall score of high-risk is more essential, it indicates how many high-risk profiles can be identified among all real high-risk profiles. Therefore, `EasyEnsembleClassifier` has the best performance to catch high-risk profiles, it determined 92% of real high-risk profiles. At the same time, all of the models also falsely determined a large number of high-risk those are actually low-risk profiles (low precision scores of low-risk), so that many applicants will be falsely rejected.
+
+In conclusion, if the bank just aims to catch as many high-risk as possible, `EasyEnsembleClassifier` would be the best choice. However, if the bank aims to accurately determine both low- and high-risk profiles, they should move on to models other than the above six.
+
+
+
